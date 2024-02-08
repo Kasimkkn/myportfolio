@@ -54,7 +54,7 @@ const About = () => {
 
         <div className="box">
             <h3>1+</h3>
-            <p>years of experience</p>
+            <p>year of experience</p>
         </div>
 
         <div className="box">
@@ -134,13 +134,13 @@ const About = () => {
     <div className="box">
         <i className="fas fa-graduation-cap"></i>
         <span>2022 - 2023</span>
-        <h3>front-end development</h3>
+        <h3>full stack web developer</h3>
     </div>
 
     <div className="box">
         <i className="fas fa-graduation-cap"></i>
         <span>2023 - 2024</span>
-        <h3>back-end development</h3>
+        <h3>database management</h3>
     </div>
 
     <div className="box">
@@ -158,7 +158,7 @@ const About = () => {
     <div className="box">
         <i className="fas fa-graduation-cap"></i>
         <span>2023 - 2024</span>
-        <h3>server side development</h3>
+        <h3>git & github and other tools</h3>
     </div>
 
 </div>

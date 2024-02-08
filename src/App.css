@@ -369,9 +369,11 @@ section {
 }
 
 .portfolio .box-container .box {
-  height: 30rem;
+  height: 20rem;
   overflow: hidden;
+  box-shadow: 1px 2px 4px #ccc;
   position: relative;
+  padding: 1rem;
 }
 
 .portfolio .box-container .box:hover .content {
@@ -382,7 +384,7 @@ section {
 .portfolio .box-container .box img {
   height: 100%;
   width: 100%;
-     object-fit: contain;
+     object-fit: cover;
 }
 
 .portfolio .box-container .box .content {
