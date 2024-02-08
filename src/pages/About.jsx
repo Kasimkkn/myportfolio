@@ -40,8 +40,8 @@ const About = () => {
             <div className="box">
                 <h3> <span>freelance : </span> available </h3>
                 <h3> <span>skill : </span> front-end </h3>
-                <h3> <span>experience : </span> 1 years </h3>
-                <h3> <span>language : </span> hindi, english </h3>
+                <h3> <span>experience : </span> 1 year </h3>
+                <h3> <span>language : </span> english, hindi, gujarati </h3>
             </div>
 
         </div>
