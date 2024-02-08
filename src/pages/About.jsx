@@ -7,6 +7,15 @@ import icon5 from '../images/icon-5.png'
 import icon6 from '../images/icon-6.png'
 import icon7 from '../images/icon-7.png'
 const About = () => {
+   const handleDownload = () => {
+        const url =   '/kasim-resume.pdf';
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
   return (
   <>
        <section className="about">
@@ -37,7 +46,7 @@ const About = () => {
 
         </div>
 
-        <a href="#" className="btn"> download CV <i className="fas fa-download"></i> </a>
+        <a href="#" className="btn" onClick={handleDownload}> download CV <i className="fas fa-download"></i> </a>
 
     </div>
 
