@@ -2,8 +2,6 @@ import img1 from '../images/img-1.png'
 import img2 from '../images/snap.png'
 import img3 from '../images/lens.png'
 import img4 from '../images/educa.png'
-import img5 from '../images/img-5.jpg'
-import img6 from '../images/img-6.jpg'
 
 const Portfolio = () => {
   return (
@@ -34,9 +32,9 @@ const Portfolio = () => {
         <div className="box">
             <img src={img3} alt=""></img>
             <div className="content">
-                <h3>Eyescart</h3>
+                <h3>Eyescare</h3>
                 <p>A Web App Frontend For Selling Eyeglasses</p>
-                <a href="https://github.com/Kasimkkn/eyescart" target='_blank'>link</a>
+                <a href="https://github.com/Kasimkkn/eyescare" target='_blank'>link</a>
             </div>
         </div>
 
