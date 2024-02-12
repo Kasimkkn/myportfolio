@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import myphoto from '../images/kasim1.png';
+import myphoto from '../images/kasim.png';
 
 const Home = () => {
   const [index, setIndex] = useState(0);
