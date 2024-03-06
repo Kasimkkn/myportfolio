@@ -144,9 +144,11 @@ section {
 }
 
 .home .image img {
-  height: 50rem;
-  width: 50rem;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  height: 58rem;
+  width: 32rem;
+  filter: grayscale(1);
+  border-radius: 64% 70% 64% 70% / 33% 30% 34% 34%;
+
 }
 
 .home .content {
@@ -656,8 +658,8 @@ section {
     gap: 2rem;
   }
   .home .image img {
-    height: 30rem;
-    width: 30rem;
+    height: 40rem;
+    width: 25rem;
   }
   .home .content h3 {
     font-size: 3rem;

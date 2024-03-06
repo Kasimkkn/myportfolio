@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import myphoto from '../images/kasim.png';
+import myphoto from '../images/kasim.jpg';
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <section className="home">
       <div className="image">
-        <img src={myphoto} alt="" />
+       <img src={myphoto} alt="" />
       </div>
       <div className="content">
         <h3>hi, i am kasim kadiwala</h3>
