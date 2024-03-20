@@ -6,6 +6,12 @@ import icon4 from '../images/icon-4.png'
 import icon5 from '../images/icon-5.png'
 import icon6 from '../images/icon-6.png'
 import icon7 from '../images/icon-7.png'
+import nextjs from '../images/nextjs.png'
+import firebase from '../images/firebase.png'
+import tailwind from '../images/tailwind.png'
+import ionic from '../images/ionic.png'
+import boot from '../images/boots.svg'
+
 const About = () => {
    const handleDownload = () => {
         const url =   '/kasim-resume.pdf';
@@ -34,13 +40,13 @@ const About = () => {
                 <h3> <span>name : </span> kasim kadiwala</h3>
                 <h3> <span>age : </span> 21 </h3>
                 <h3> <span>email : </span> kasimkkn15@gmail.com </h3>
-                <h3> <span>address : </span> india - 384290 </h3>
+                <h3> <span>address : </span> mumbai, India </h3>
             </div>
 
             <div className="box">
                 <h3> <span>freelance : </span> available </h3>
-                <h3> <span>skill : </span> front-end </h3>
-                <h3> <span>experience : </span> 1 year </h3>
+                <h3> <span>skill : </span> html, css, javascript, reactjs, nodejs, express, mongodb, mysql, tailwind , nextjs </h3>
+                <h3> <span>experience : </span> 1.5 year </h3>
                 <h3> <span>language : </span> english, hindi, gujarati </h3>
             </div>
 
@@ -53,17 +59,17 @@ const About = () => {
     <div className="count-container">
 
         <div className="box">
-            <h3>1+</h3>
+            <h3>1.5+</h3>
             <p>year of experience</p>
         </div>
 
         <div className="box">
-            <h3>50+</h3>
+            <h3>10+</h3>
             <p>happy clients</p>
         </div>
 
         <div className="box">
-            <h3>100+</h3>
+            <h3>20+</h3>
             <p>project completed</p>
         </div>
 
@@ -100,10 +106,22 @@ const About = () => {
         <img src={icon6}></img>
         <h3>reactjs</h3>
     </div>
+    <div className="box">
+        <img src={boot}></img>
+        <h3>bootstrap</h3>
+    </div>
+    <div className="box">
+        <img src={tailwind}></img>
+        <h3>tailwindcss</h3>
+    </div>
     
     <div className="box">
         <img src={icon5}></img>
         <h3>nodejs</h3>
+    </div>
+    <div className="box">
+        <img src={nextjs}></img>
+        <h3>nextjs</h3>
     </div>
     <div className="box">
         <img src={icon4}></img>
@@ -112,6 +130,14 @@ const About = () => {
     <div className="box">
         <img src={icon7}></img>
         <h3>mongodb</h3>
+    </div>
+    <div className="box">
+        <img src={firebase}></img>
+        <h3>firebase</h3>
+    </div>
+    <div className="box">
+        <img src={ionic}></img>
+        <h3>ionic</h3>
     </div>
     
 </div>

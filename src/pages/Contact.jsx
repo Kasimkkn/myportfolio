@@ -10,16 +10,15 @@ const Contact = () => {
         <div className="info-container">
           <h1>get in touch</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-            dolorem sunt sapiente vel minus eaque voluptate fugit corrupti omnis
-            tempora?
+          Experienced Full Stack Web Developer proficient in front-end and back-end technologies,
+            I am available for work. Connect with me
           </p>
           <div className="box-container">
             <div className="box">
               <i className="fas fa-map"></i>
               <div className="info">
                 <h3>address :</h3>
-                <p>india - 384290</p>
+                <p>mumbai , India</p>
               </div>
             </div>
 
@@ -35,7 +34,7 @@ const Contact = () => {
               <i className="fas fa-phone"></i>
               <div className="info">
                 <h3>number :</h3>
-                <p>+919328590165</p>
+                <p>+91 8459258801</p>
               </div>
             </div>
           </div>

@@ -277,15 +277,15 @@ section {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
   border-radius: .5rem;
-  background: #1a1a1a;
-}
-
-.skills .box-container .box:hover {
   background: white;
 }
 
+.skills .box-container .box:hover {
+  background: #1a1a1a;
+}
+
 .skills .box-container .box:hover h3 {
-  color: black;
+  color: white;
 }
 
 .skills .box-container .box img {
@@ -294,7 +294,7 @@ section {
 }
 
 .skills .box-container .box h3 {
-  color: white;
+  color: #1a1a1a;
   font-size: 1.7rem;
   font-weight: normal;
   text-transform: uppercase;
