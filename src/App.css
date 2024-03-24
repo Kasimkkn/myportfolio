@@ -133,7 +133,7 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 4rem;
-  min-height: calc(100vh - 6.5rem);
+  height: calc(100vh - 6.5rem);
 }
 
 .home .image {
@@ -146,8 +146,7 @@ section {
 .home .image img {
   height: 58rem;
   width: 32rem;
-  filter: grayscale(1);
-  border-radius: 64% 70% 64% 70% / 33% 30% 34% 34%;
+  border-radius: 4% 4% 50% 50% / 27% 27% 73% 73% ;
 
 }
 

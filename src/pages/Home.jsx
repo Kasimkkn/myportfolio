@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import myphoto from '../images/kasim.jpg';
+import myphoto from '/kasim.png';
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -36,7 +36,7 @@ const Home = () => {
         <h3>hi, i am kasim kadiwala</h3>
         <span>{displayedText}</span>
         <p>A passionate developer with expertise in a variety of fields including web design, front-end and back-end development, software engineering, and UI/UX design. I thrive on creating innovative solutions and bringing ideas to life. Let's collaborate and turn your vision into reality!</p>
-         <a href="/about" className="btn"> about me <i className="fas fa-user"></i> </a>
+         {/* <a href="/about" className="btn"> about me <i className="fas fa-user"></i> </a> */}
       </div>
     </section>
   );
