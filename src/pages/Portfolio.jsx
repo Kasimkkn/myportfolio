@@ -2,7 +2,8 @@ import img1 from '../images/img-1.png'
 import img2 from '../images/snap.png'
 import img3 from '../images/lens.png'
 import img4 from '../images/educa.png'
-
+import mir from '../images/mir.png'
+import dst from '../images/ds.png'
 const Portfolio = () => {
   return (
     <section className="portfolio">
@@ -29,6 +30,22 @@ const Portfolio = () => {
             </div>
         </div>
        
+        <div className="box">
+            <img src={dst} alt=""></img>
+            <div className="content">
+                <h3>D-Studio</h3>
+                <p>A Web App For Digitally crafted brand experiences</p>
+                <a href="https://dstudio2.netlify.app" target='_blank'>link</a>
+            </div>
+        </div>
+        <div className="box">
+            <img src={mir} alt=""></img>
+            <div className="content">
+                <h3>Miranda-News</h3>
+                <p>A News Paper Web App Frontend</p>
+                <a href="https://github.com/Kasimkkn/eyescare" target='_blank'>link</a>
+            </div>
+        </div>
         <div className="box">
             <img src={img3} alt=""></img>
             <div className="content">
