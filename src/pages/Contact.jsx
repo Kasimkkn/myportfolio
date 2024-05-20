@@ -17,8 +17,8 @@ const Contact = () => {
             <div className="box">
               <i className="fas fa-map"></i>
               <div className="info">
-                <h3>address :</h3>
-                <p>mumbai , India</p>
+                <h3> address : </h3>
+                <p>mumbai, India OR Ahmedabad, India</p>
               </div>
             </div>
 

@@ -215,6 +215,12 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
+          padding: 2rem;
+          border-radius: .5rem;
+          background: #1a1a1a;
+          -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+                  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+
 }
 
 .about .row .info-container .box-container .box h3 {

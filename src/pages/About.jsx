@@ -11,10 +11,11 @@ import firebase from '../images/firebase.png'
 import tailwind from '../images/tailwind.png'
 import ionic from '../images/ionic.png'
 import boot from '../images/boots.svg'
+import elect from '../images/elect.png'
 
 const About = () => {
    const handleDownload = () => {
-        const url =   '/kasim-resume.pdf';
+        const url =   '/kasim cv.pdf';
         const link = document.createElement('a');
         link.href = url;
         link.setAttribute('download', 'resume.pdf');
@@ -40,14 +41,14 @@ const About = () => {
                 <h3> <span>name : </span> kasim kadiwala</h3>
                 <h3> <span>age : </span> 21 </h3>
                 <h3> <span>email : </span> kasimkkn15@gmail.com </h3>
-                <h3> <span>address : </span> mumbai, India </h3>
+                <h3> <span>address : </span> mumbai, India OR Ahmedabad, India</h3>
             </div>
 
             <div className="box">
+                <h3> <span>experience : </span> 1 year </h3>
                 <h3> <span>freelance : </span> available </h3>
-                <h3> <span>skill : </span> html, css, javascript, reactjs, nodejs, express, mongodb, mysql, tailwind , nextjs </h3>
-                <h3> <span>experience : </span> 1.5 year </h3>
-                <h3> <span>language : </span> english, hindi, gujarati </h3>
+                <h3> <span>language : </span> english, hindi, gujarati , urdu , marathi </h3>
+                <h3> <span>hobbies : </span> reading, gaming, cricket </h3>
             </div>
 
         </div>
@@ -59,7 +60,7 @@ const About = () => {
     <div className="count-container">
 
         <div className="box">
-            <h3>1.5+</h3>
+            <h3>1+</h3>
             <p>year of experience</p>
         </div>
 
@@ -72,12 +73,6 @@ const About = () => {
             <h3>20+</h3>
             <p>project completed</p>
         </div>
-
-        <div className="box">
-            <h3>10+</h3>
-            <p>awards won</p>
-        </div>
-
     </div>
 
 </div>
@@ -139,6 +134,14 @@ const About = () => {
         <img src={ionic}></img>
         <h3>ionic</h3>
     </div>
+    <div className="box">
+        <img src={elect}></img>
+        <h3>electronjs</h3>
+    </div>
+    <div className="box">
+        <img src={icon6}></img>
+        <h3>react native</h3>
+    </div>
     
 </div>
 
@@ -171,7 +174,7 @@ const About = () => {
 
     <div className="box">
         <i className="fas fa-graduation-cap"></i>
-        <span>2023 - 2024</span>
+        <span>2022 - 2023</span>
         <h3>web design</h3>
     </div>
 
@@ -183,7 +186,7 @@ const About = () => {
 
     <div className="box">
         <i className="fas fa-graduation-cap"></i>
-        <span>2023 - 2024</span>
+        <span>2022 - </span>
         <h3>git & github and other tools</h3>
     </div>
 
