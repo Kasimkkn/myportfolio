@@ -1,11 +1,6 @@
 const Contact = () => {
   return (
-    <section className="contact">
-      <h1 className="heading">
-        {" "}
-        contact <span>me</span>{" "}
-      </h1>
-
+    <section className="contact" style={{overflow: 'hidden'}}>
       <div className="row">
         <div className="info-container">
           <h1>get in touch</h1>

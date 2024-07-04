@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -30,6 +31,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
+  user-select: none;
   background: black;
   padding-bottom: 6.5rem;
 }
@@ -90,8 +92,8 @@ section {
   display: flex;
   z-index: 1000;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .navbar a {
@@ -99,16 +101,18 @@ section {
   font-size: 2rem;
   background: #1a1a1a;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   color: white;
   text-align: center;
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
-.navbar a span{
-     color: powderblue;
+
+.navbar a span {
+  color: powderblue;
 }
+
 .navbar a i {
   color: powderblue;
   padding-right: .5rem;
@@ -119,7 +123,8 @@ section {
   padding-bottom: 3rem;
 }
 
-.navbar a:hover i,a:hover span {
+.navbar a:hover i,
+a:hover span {
   color: black;
 }
 
@@ -128,32 +133,32 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 4rem;
   height: calc(100vh - 6.5rem);
 }
 
 .home .image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
   text-align: center;
 }
 
 .home .image img {
   height: 58rem;
   width: 32rem;
-  border-radius: 50% 50% 50% 50% / 27% 27% 73% 73% ;
+  border-radius: 50% 50% 50% 50% / 27% 27% 73% 73%;
 
 }
 
 .home .content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
 }
 
 .home .content h3 {
@@ -181,17 +186,17 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .about .row .info-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
 }
 
 .about .row .info-container h1 {
@@ -207,20 +212,19 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .about .row .info-container .box-container .box {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
-          padding: 2rem;
-          border-radius: .5rem;
-          background: #1a1a1a;
-          -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-                  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-
+  -ms-flex: 1 1 20rem;
+  flex: 1 1 20rem;
+  padding: 2rem;
+  border-radius: .5rem;
+  background: #1a1a1a;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
 
 .about .row .info-container .box-container .box h3 {
@@ -237,25 +241,25 @@ section {
 
 .about .row .count-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .about .row .count-container .box {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20rem;
-          flex: 1 1 20rem;
+  -ms-flex: 1 1 20rem;
+  flex: 1 1 20rem;
   padding: 3rem 4rem;
   border-radius: .5rem;
   background: #1a1a1a;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
 
 .about .row .count-container .box h3 {
@@ -268,21 +272,67 @@ section {
   color: #aaa;
 }
 
+.about .row .info-container .box-container .box-item,
+.about .row .count-container .box-item {
+  flex: 1 1 20rem;
+  padding: 2rem;
+  border-radius: .5rem;
+  background: #1a1a1a;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+.about .row .info-container .box-container .box-item:hover {
+  background: powderblue;
+  color: black;
+}
+
+.about .row .count-container .box-item:hover {
+  background: powderblue;
+  color: black;
+}
+.about .row .info-container .box-container .box-item:hover h3{
+  color: black;
+}
+
+.about .row .count-container .box-item:hover h3{
+  color: black;
+}
+
+.about .row .info-container .box-container .box-item h3,
+.about .row .count-container .box-item h3 {
+  font-size: 1.7rem;
+  color: white;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.about .row .info-container .box-container .box-item h3 span,
+.about .row .count-container .box-item p {
+  color: white;
+  font-weight: 200;
+}
+
 .skills .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1.5rem;
+  overflow: hidden;
+  /* Ensures smooth overflow handling */
+
 }
 
 .skills .box-container .box {
   padding: 2rem;
   text-align: center;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
   border-radius: .5rem;
   background: white;
+  transition: transform 0.5s ease;
+  /* Transition for smooth movement */
 }
 
 .skills .box-container .box:hover {
@@ -310,13 +360,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .education .box-container .box {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
   margin-left: 2rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -385,13 +435,13 @@ section {
 
 .portfolio .box-container .box:hover .content {
   -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .portfolio .box-container .box img {
   height: 100%;
   width: 100%;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .portfolio .box-container .box .content {
@@ -406,17 +456,17 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 2rem;
   -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
@@ -448,7 +498,7 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -458,12 +508,12 @@ section {
   border-radius: .5rem;
   background: #1a1a1a;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
 
 .blogs .box-container .box:hover .image img {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .blogs .box-container .box .image {
@@ -477,7 +527,7 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
@@ -524,10 +574,10 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -589,8 +639,8 @@ section {
 
 .contact .row form {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
 }
 
 .contact .row form .inputBox {
@@ -598,10 +648,10 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .contact .row form .inputBox input {
@@ -640,6 +690,7 @@ section {
   html {
     font-size: 55%;
   }
+
   section {
     padding: 3rem 2rem;
   }
@@ -649,29 +700,37 @@ section {
   .heading {
     font-size: 12vw;
   }
+
   .navbar a i {
     padding: 0;
   }
+
   .navbar a span {
     display: none;
   }
+
   .navbar a:hover {
     padding-bottom: 2rem;
   }
+
   .home {
     text-align: center;
     gap: 2rem;
   }
+
   .home .image img {
     height: 40rem;
     width: 25rem;
   }
+
   .home .content h3 {
     font-size: 3rem;
   }
+
   .home .content span {
     font-size: 2.5rem;
   }
+
   .contact .row form .inputBox input {
     width: 100%;
     margin-bottom: 1rem;
