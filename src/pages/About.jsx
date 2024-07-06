@@ -23,18 +23,15 @@ const initialData = {
       { id: "item-2", content: "age: 21" },
       { id: "item-3", content: "email: kasimkkn15@gmail.com" },
       { id: "item-4", content: "address: mumbai, India OR Ahmedabad, India" },
-      { id: "item-6", content: "freelance: available" },
-      {
-        id: "item-7",
-        content: "language: english, hindi, gujarati, urdu, marathi",
-      },
-      { id: "item-8", content: "hobbies: reading, gaming, cricket" },
+      {id: "item-7",content: "language: english, hindi, gujarati, urdu, marathi"},
     ],
   },
   stats: {
     id: "stats",
     title: "Stats",
     items: [
+      { id: "item-6", content: "freelance: available" },
+      { id: "item-8", content: "hobbies: reading, gaming, cricket" },
       { id: "item-9", content: "1+ year of experience" },
       { id: "item-10", content: "10+ happy clients" },
       { id: "item-11", content: "20+ project completed" },
@@ -153,7 +150,7 @@ const About = () => {
       <SkillsSection />
 
       <section className="education">
-      
+
         <h1 className="heading">
           {" "}
           <span>my</span> education{" "}
@@ -215,32 +212,32 @@ const skills = [
 ];
 
 const SkillsSection = () => {
-    const [displaySkills, setDisplaySkills] = useState(skills);
+  const [displaySkills, setDisplaySkills] = useState(skills);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setDisplaySkills(prevSkills => [
-                ...prevSkills.slice(1),  
-                prevSkills[0],
-            ]);
-        }, 2000); 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDisplaySkills(prevSkills => [
+        ...prevSkills.slice(1),
+        prevSkills[0],
+      ]);
+    }, 2000);
 
-        return () => clearInterval(interval);
-    }, []);
+    return () => clearInterval(interval);
+  }, []);
 
-    return (
-        <section className="skills">
-            <h1 className="heading"> <span>my</span> skills </h1>
-            <div className="box-container">
-                {displaySkills.map((skill, index) => (
-                    <div key={skill.id} className="box" style={{  }}>
-                        <img src={skill.icon} alt={skill.label} />
-                        <h3>{skill.label}</h3>
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+  return (
+    <section className="skills">
+      <h1 className="heading"> <span>my</span> skills </h1>
+      <div className="box-container">
+        {displaySkills.map((skill, index) => (
+          <div key={skill.id} className="box" style={{}}>
+            <img src={skill.icon} alt={skill.label} />
+            <h3>{skill.label}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default About;

@@ -2,23 +2,27 @@ import React, { useState, useEffect } from 'react';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import img1 from '../images/img-1.png';
 import pos from '../images/pos.png';
+import vcme from '../images/vc-me.png';
 import img2 from '../images/snap.png';
 import img3 from '../images/lens.png';
 import img4 from '../images/educa.png';
 import mir from '../images/mir.png';
 import dst from '../images/ds.png';
 
+
+
 const initialData = {
     completed: {
         id: 'completed',
         items: [
+            { id: 'item-9', image: vcme, title: 'VC-ME', description: 'a Next.js-based Video Conferencing App built', link: 'https://github.com/Kasimkkn/Vc-Me' },
             { id: 'item-1', image: img1, title: 'Luxify Shoes Store', description: 'premium and trendy shoes website with admin panel', link: 'https://luxifys.vercel.app/' },
             { id: 'item-2', image: img2, title: 'SnapGram', description: 'A Social Media Web App', link: 'https://github.com/Kasimkkn/social-media' },
-            { id: 'item-3', image: img3, title: 'Eyescare', description: 'A Web App Frontend For Selling Eyeglasses', link: 'https://github.com/Kasimkkn/eyescare' },
-            { id: 'item-5', image: dst, title: 'D-Studio', description: 'A Web App For Digitally crafted brand experiences', link: 'https://dstudio2.netlify.app' },
             { id: 'item-6', image: mir, title: 'Miranda-News', description: 'A Newspaper Web App Frontend', link: 'https://github.com/Kasimkkn/Miranda' },
-            { id: 'item-7', image: img4, title: 'Educa', description: 'A Web App Frontend For Education', link: 'https://github.com/Kasimkkn/education' },
+            { id: 'item-5', image: dst, title: 'D-Studio', description: 'A Web App For Digitally crafted brand experiences', link: 'https://dstudio2.netlify.app' },
             { id: 'item-4', image: pos, title: 'A Restaurant Billing Desktop App', description: 'Billing, Inventory, Reports, POS', link: 'https://github.com/Kasimkkn/develpoment-pos' },
+            { id: 'item-3', image: img3, title: 'Eyescare', description: 'A Web App Frontend For Selling Eyeglasses', link: 'https://github.com/Kasimkkn/eyescare' },
+            { id: 'item-7', image: img4, title: 'Educa', description: 'A Web App Frontend For Education', link: 'https://github.com/Kasimkkn/education' },
         ],
     },
 };
@@ -92,6 +96,7 @@ const Portfolio = () => {
                             className="box-container"
                         >
                             {items.completed.items.map((item, index) => (
+                                console.log(item),
                                 <Draggable key={item.id} draggableId={item.id} index={index}>
                                     {(provided, snapshot) => (
                                         <div
