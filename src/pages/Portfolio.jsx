@@ -8,13 +8,14 @@ import img3 from '../images/lens.png';
 import img4 from '../images/educa.png';
 import mir from '../images/mir.png';
 import dst from '../images/ds.png';
-
+import resume from '../images/resume.png';
 
 
 const initialData = {
     completed: {
         id: 'completed',
         items: [
+            { id: 'item-8', image: resume, title: 'Resume Builder', description: 'A Web App for building resumes', link: 'https://github.com/Kasimkkn/Resume-Builder' },
             { id: 'item-9', image: vcme, title: 'VC-ME', description: 'a Next.js-based Video Conferencing App built', link: 'https://github.com/Kasimkkn/Vc-Me' },
             { id: 'item-1', image: img1, title: 'Luxify Shoes Store', description: 'premium and trendy shoes website with admin panel', link: 'https://luxifys.vercel.app/' },
             { id: 'item-2', image: img2, title: 'SnapGram', description: 'A Social Media Web App', link: 'https://github.com/Kasimkkn/social-media' },
