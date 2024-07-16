@@ -116,11 +116,9 @@ section {
   font-size: 1.5rem;
 }
 
-.navbar a i {
+.navbar a svg {
   font-size: 2.5rem;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  border-radius: 50%;
-  padding: 10px;
   background-color: transparent;
 }
 
@@ -142,16 +140,22 @@ section {
   top: -2px;
   z-index: -1;
 }
+.navbar a.active , .navbar a:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.navbar a.active i, .navbar a:hover i {
-  transform: translateY(-30px);
+.navbar a.active svg, .navbar a:hover svg {
+  transform: translateY(-25px);
   color: black;
-  padding: 15px;
+  font-size: 2.2rem;
 }
 
 .navbar a.active::after, .navbar a:hover::after {
   background-color: powderblue;
-  transform: translateY(-20px);
+  transform: translateY(-22px);
+  font-size: 2.2rem;
 }
 
 .navbar a.active, .navbar a:hover {
@@ -173,6 +177,10 @@ section {
   .navbar a i {
     font-size: 3rem;
   }
+  .navbar a.active svg, .navbar a:hover svg {
+    transform: translateY(-20px);
+  }
+  
 }
 
 

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Spline from '@splinetool/react-spline';
-
+import React, { useState, useEffect , lazy } from "react";
+const Spline = lazy(() => import("@splinetool/react-spline"));
 const Home = () => {
   const [index, setIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
