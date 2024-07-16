@@ -46,13 +46,6 @@ const Home = () => {
       <div className="content">
         <h3>hi, i am kasim kadiwala</h3>
         <span>{displayedText}</span>
-        {/* <p>
-          A passionate developer with expertise in a variety of fields including
-          web design, front-end and back-end development, software engineering,
-          and UI/UX design. I thrive on creating innovative solutions and
-          bringing ideas to life. Let's collaborate and turn your vision into
-          reality!
-        </p> */}
       </div>
     </section>
   );
