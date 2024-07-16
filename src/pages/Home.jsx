@@ -34,23 +34,6 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [index]);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      const content = document.querySelector(".home .content");
-      const rect = content.getBoundingClientRect();
-      const offsetX = e.clientX - rect.width / 2;
-      const offsetY = e.clientY - rect.height / 2;
-
-      content.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
   return (
     <section className="home">
       <div className="image">
@@ -63,13 +46,13 @@ const Home = () => {
       <div className="content">
         <h3>hi, i am kasim kadiwala</h3>
         <span>{displayedText}</span>
-        <p>
+        {/* <p>
           A passionate developer with expertise in a variety of fields including
           web design, front-end and back-end development, software engineering,
           and UI/UX design. I thrive on creating innovative solutions and
           bringing ideas to life. Let's collaborate and turn your vision into
           reality!
-        </p>
+        </p> */}
       </div>
     </section>
   );

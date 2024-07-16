@@ -18,7 +18,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: 1rem;
+  width: 5px;
 }
 
 html::-webkit-scrollbar-track {
@@ -154,6 +154,7 @@ a:hover span {
 
 .home .content {
   position: absolute;
+  top: 10px;
   max-width: 800px;
   padding: 2rem;
   z-index: 2;
