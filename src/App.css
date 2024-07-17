@@ -167,6 +167,9 @@ section {
 }
 
 @media (max-width: 768px) {
+  .navbar a{
+    padding: 13px 0;
+  }
   .navbar a span {
     display: none;
   }
