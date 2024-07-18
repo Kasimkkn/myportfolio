@@ -61,19 +61,15 @@ const Slider = () => {
                 <div className="item" style={{ '--position': 10 }}><img src={work3} alt="work 10" /></div>
             </div>
             <div className="content">
-                <h1 data-content="KASIM KADIWALA">
-                    KASIM KADIWALA
-                </h1>
                 <div className="author">
                     <p><b>{displayedText}</b></p>
                 </div>
-            </div>
             <div className="model">
                     <Spline
                         scene="https://prod.spline.design/0-77-vpBpPWyxvCW/scene.splinecode"
-                        className="spline"
                     />
                 </div>
+            </div>
         </div>
     )
 }
