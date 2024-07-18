@@ -1,5 +1,5 @@
-import React, { lazy, useEffect, useState } from 'react'
-const Spline = lazy(() => import("@splinetool/react-spline"));
+import React, { useEffect, useState } from 'react'
+import Spline from "@splinetool/react-spline";
 import './slider.css'
 
 import work1 from '../../images/resume.png'
