@@ -1,3 +1,4 @@
+import React from 'react'
 import icon1 from "../images/icon-1.png";
 import icon2 from "../images/icon-2.png";
 import icon3 from "../images/icon-3.png";
@@ -11,43 +12,30 @@ import tailwind from "../images/tailwind.png";
 import ionic from "../images/ionic.png";
 import boot from "../images/boots.svg";
 import elect from "../images/elect.png";
+import './skillsection.css'
 
-import React from "react";
-const skills = [
-    { id: "html", icon: icon1, label: "html" },
-    { id: "css", icon: icon2, label: "css" },
-    { id: "javascript", icon: icon3, label: "javascript" },
-    { id: "reactjs", icon: icon6, label: "reactjs" },
-    { id: "bootstrap", icon: boot, label: "bootstrap" },
-    { id: "tailwind", icon: tailwind, label: "tailwindcss" },
-    { id: "nodejs", icon: icon5, label: "nodejs" },
-    { id: "nextjs", icon: nextjs, label: "nextjs" },
-    { id: "mysql", icon: icon4, label: "mysql" },
-    { id: "mongodb", icon: icon7, label: "mongodb" },
-    { id: "firebase", icon: firebase, label: "firebase" },
-    { id: "ionic", icon: ionic, label: "ionic" },
-    { id: "electronjs", icon: elect, label: "electronjs" },
-    { id: "reactnative", icon: icon6, label: "react native" },
-];
-
-const SkillsSection = () => {
-    return (
-        <section className="skills">
-            <h1 className="heading">
-
-                <span>my</span> skills
-            </h1>
-            <div className="box-container">
-                {skills.map((skill, index) => (
-                    <div key={skill.id} className="box" style={{}}>
-                        <img src={skill.icon} alt={skill.label} />
-                        <h3>{skill.label}</h3>
-                    </div>
-                ))}
+const SkillSection = () => {
+  return (
+    <div className="slider" reverse="true" style={{
+            '--width': '120px',
+            '--height': '120px',
+            '--quantity': '13'
+        }}>
+            <div className="list">
+                <div className="item" style={{'--position': '1'}}><img src={icon1} alt=""/></div>
+                <div className="item" style={{'--position': '2'}}><img src={icon2} alt=""/></div>
+                <div className="item" style={{'--position': '3'}}><img src={icon3} alt=""/></div>
+                <div className="item" style={{'--position': '4'}}><img src={icon4} alt=""/></div>
+                <div className="item" style={{'--position': '5'}}><img src={icon5} alt=""/></div>
+                <div className="item" style={{'--position': '6'}}><img src={icon6} alt=""/></div>
+                <div className="item" style={{'--position': '7'}}><img src={icon7} alt=""/></div>
+                <div className="item" style={{'--position': '8'}}><img src={tailwind} alt=""/></div>
+                <div className="item" style={{'--position': '9'}}><img src={boot} alt=""/></div>
+                <div className="item" style={{'--position': '10'}}><img src={elect} alt=""/></div>
+                <div className="item" style={{'--position': '11'}}><img src={firebase} alt=""/></div>
             </div>
-        </section>
-    );
-};
+        </div>
+  )
+}
 
-
-export default SkillsSection
+export default SkillSection

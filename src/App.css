@@ -159,7 +159,7 @@ section {
 }
 
 .navbar a.active, .navbar a:hover {
-  color: powderblue;
+  color: #b0e0e6;
 }
 
 .navbar a.active span, .navbar a:hover span {
@@ -181,12 +181,11 @@ section {
     font-size: 3rem;
   }
   .navbar a.active svg, .navbar a:hover svg {
-    transform: translateY(-20px);
+    transform: translateY(-26px);
+        font-size: 3rem;
   }
   
 }
-
-
 
 .home {
   display: flex;
@@ -392,7 +391,8 @@ section {
   position: relative;
 }
 
-.education .box-container .box i {
+.education .box-container .box svg {
+  padding: 0.6rem;
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;

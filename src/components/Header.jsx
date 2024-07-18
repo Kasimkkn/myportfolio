@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-      <NavLink to="/" exact activeClassName="active" onClick={() => playSound(pian1Sound)}>
+      <NavLink to="/" exact="true" activeClassName="active" onClick={() => playSound(pian1Sound)}>
         <FaHome/>
         <span>home</span>
       </NavLink>
