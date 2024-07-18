@@ -33,7 +33,7 @@ html::-webkit-scrollbar-thumb {
 body {
   user-select: none;
   background: black;
-  padding-bottom: 6.5rem;
+  /* padding-bottom: 6.5rem; */
 }
 
 section {

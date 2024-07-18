@@ -16,7 +16,7 @@ import './skillsection.css'
 
 const SkillSection = () => {
   return (
-    <div className="slider" reverse="true" style={{
+    <div className="skillSlider" reverse="true" style={{
             '--width': '120px',
             '--height': '120px',
             '--quantity': '13'

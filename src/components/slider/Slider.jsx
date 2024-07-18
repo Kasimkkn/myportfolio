@@ -47,18 +47,18 @@ const Slider = () => {
     return (
         <div className="banner">
             <div className="slider" style={{
-                '--quantity': 10,
+                '--quantity': '10',
             }}>
-                <div className="item" style={{ '--position': 1 }}><img src={work1} alt="work 1" /></div>
-                <div className="item" style={{ '--position': 2 }}><img src={work2} alt="work 2" /></div>
-                <div className="item" style={{ '--position': 3 }}><img src={work3} alt="work 3" /></div>
-                <div className="item" style={{ '--position': 4 }}><img src={work4} alt="work 4" /></div>
-                <div className="item" style={{ '--position': 5 }}><img src={work5} alt="work 5" /></div>
-                <div className="item" style={{ '--position': 6 }}><img src={work6} alt="work 6" /></div>
-                <div className="item" style={{ '--position': 7 }}><img src={work7} alt="work 7" /></div>
-                <div className="item" style={{ '--position': 8 }}><img src={work8} alt="work 8" /></div>
-                <div className="item" style={{ '--position': 9 }}><img src={work5} alt="work 9" /></div>
-                <div className="item" style={{ '--position': 10 }}><img src={work3} alt="work 10" /></div>
+                <div className="item" style={{ '--position': '1' }}><img src={work1} alt="work 1" /></div>
+                <div className="item" style={{ '--position': '2' }}><img src={work2} alt="work 2" /></div>
+                <div className="item" style={{ '--position': '3' }}><img src={work3} alt="work 3" /></div>
+                <div className="item" style={{ '--position': '4' }}><img src={work4} alt="work 4" /></div>
+                <div className="item" style={{ '--position': '5' }}><img src={work5} alt="work 5" /></div>
+                <div className="item" style={{ '--position': '6' }}><img src={work6} alt="work 6" /></div>
+                <div className="item" style={{ '--position': '7' }}><img src={work7} alt="work 7" /></div>
+                <div className="item" style={{ '--position': '8' }}><img src={work8} alt="work 8" /></div>
+                <div className="item" style={{ '--position': '9' }}><img src={work5} alt="work 9" /></div>
+                <div className="item" style={{ '--position': '10' }}><img src={work3} alt="work 10" /></div>
             </div>
             <div className="content">
                 <div className="author">
