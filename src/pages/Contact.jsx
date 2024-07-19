@@ -1,6 +1,9 @@
+import { FaEnvelope, FaMapMarked, FaPhone } from "react-icons/fa";
+
+
 const Contact = () => {
   return (
-    <section className="contact" style={{overflow: 'hidden'}}>
+    <section className="contact" style={{overflow: 'hidden !important'}}>
       <div className="row">
         <div className="info-container">
           <h1>get in touch</h1>
@@ -10,7 +13,7 @@ const Contact = () => {
           </p>
           <div className="box-container">
             <div className="box">
-              <i className="fas fa-map"></i>
+              <FaMapMarked/>
               <div className="info">
                 <h3> address : </h3>
                 <p>mumbai, India OR Ahmedabad, India</p>
@@ -18,18 +21,18 @@ const Contact = () => {
             </div>
 
             <div className="box">
-              <i className="fas fa-envelope"></i>
+            <FaEnvelope />
               <div className="info">
                 <h3>email :</h3>
-                <p>kasimkkn15@gmail.com</p>
+                <a href="mailto:kasimkkn15@gmail.com">kasimkkn15@gmail.com</a>
               </div>
             </div>
 
             <div className="box">
-              <i className="fas fa-phone"></i>
+              <FaPhone/>
               <div className="info">
                 <h3>number :</h3>
-                <p>+91 8459258801</p>
+                <a href="tel:918459258801">+91 8459258801</a>
               </div>
             </div>
           </div>

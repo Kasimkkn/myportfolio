@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -10,6 +13,7 @@
   outline: none;
   border: none;
   text-transform: capitalize;
+  transition: all 0.3s ease-out;
 }
 
 html {
@@ -33,7 +37,7 @@ html::-webkit-scrollbar-thumb {
 body {
   user-select: none;
   background: black;
-  /* padding-bottom: 6.5rem; */
+  padding-bottom: 6.5rem;
 }
 
 section {
@@ -484,7 +488,7 @@ section {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
   -webkit-transition: .2s linear;
-  transition: .2s linear;
+  transition: all .5s linear;
 }
 
 .portfolio .box-container .box .content h3 {
@@ -620,14 +624,19 @@ section {
 }
 
 .contact .row .info-container .box-container .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
   padding: 1rem 0;
 }
+.contact .row .info-container .box-container .box .info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem 0;
+  width: 100%;
+}
 
-.contact .row .info-container .box-container .box i {
+.contact .row .info-container .box-container .box svg {
   font-size: 3rem;
   color: powderblue;
 }
@@ -635,6 +644,12 @@ section {
 .contact .row .info-container .box-container .box h3 {
   font-size: 2rem;
   color: white;
+}
+.contact .row .info-container .box-container .box a {
+    font-size: 1.5rem;
+  line-height: 2;
+  color: #aaa;
+  padding: 1rem 0;
 }
 
 .contact .row .info-container .share a {
@@ -707,27 +722,12 @@ section {
     font-size: 55%;
   }
 
-  section {
-    padding: 3rem 2rem;
-  }
 }
 
 @media (max-width: 768px) {
   .heading {
     font-size: 12vw;
   }
-
-  /* .navbar a i {
-    padding: 0;
-  }
-
-  .navbar a span {
-    display: none;
-  }
-
-  .navbar a:hover {
-    padding-bottom: 2rem;
-  } */
 
   .home {
     text-align: center;
@@ -747,6 +747,15 @@ section {
     font-size: 2.5rem;
   }
 
+  .contact .row .info-container h1 {
+    font-size: 4em;
+  }
+  .contact .row .info-container .box-container .box .info p {
+    font-size: 2rem;
+  }
+  .contact .row .info-container .box-container .box .info a {
+    font-size: 2rem;
+  }
   .contact .row form .inputBox input {
     width: 100%;
     margin-bottom: 1rem;
