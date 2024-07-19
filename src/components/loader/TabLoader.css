@@ -1,0 +1,29 @@
+/* TabLoader.css */
+.tab-loader {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tab-placeholder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  padding: 5px 0;
+  font-size: 1rem;
+  background-color: #9b9393;
+  border-radius: 5px;
+  margin: 0px 2px;
+  width: 80px;
+  height: 60px;
+  animation: pulse 1.5s infinite ease-in-out;
+}

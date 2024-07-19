@@ -1,0 +1,25 @@
+.skeleton-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #bcbcbc;
+  }
+  25% {
+    background-color: #abaaaa;
+  }
+  50% {
+    background-color: #999999;
+  }
+  75% {
+    background-color: #8a8a8a;
+  }
+  100% {
+    background-color: #626262;
+  }
+}
+
