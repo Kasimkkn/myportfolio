@@ -41,7 +41,7 @@ body {
 }
 
 section {
-  padding: 5rem 9%;
+  padding: 5rem 3%;
 }
 
 .heading {
@@ -588,47 +588,50 @@ section {
   padding: 1rem 0;
   line-height: 2;
 }
-
-.contact .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* .contact .row {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   gap: 2rem;
+} */
+
+.contact .contact-model{
+  position: absolute;
+    z-index: 3;
+    top: -90px;
 }
 
-.contact .row .info-container {
-  width: 40rem;
+.contact .info-container {
+  width: 46rem;
 }
 
-.contact .row .info-container h1 {
+.contact .info-container h1 {
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
   padding-bottom: 1rem;
 }
 
-.contact .row .info-container p {
+.contact .info-container p {
   font-size: 1.5rem;
   line-height: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #aaa;
-  padding: 1rem 0;
+  position: relative;
 }
 
-.contact .row .info-container .box-container {
+.contact .info-container .box-container {
   padding: 2rem 0;
 }
 
-.contact .row .info-container .box-container .box {
+.contact .info-container .box-container .box {
   display: flex;
+  z-index: 4;
+  position: relative;
   gap: 2rem;
   padding: 1rem 0;
 }
-.contact .row .info-container .box-container .box .info{
+.contact .info-container .box-container .box .info{
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -636,23 +639,23 @@ section {
   width: 100%;
 }
 
-.contact .row .info-container .box-container .box svg {
+.contact .info-container .box-container .box svg {
   font-size: 3rem;
   color: powderblue;
 }
 
-.contact .row .info-container .box-container .box h3 {
+.contact .info-container .box-container .box h3 {
   font-size: 2rem;
   color: white;
 }
-.contact .row .info-container .box-container .box a {
+.contact .info-container .box-container .box a {
     font-size: 1.5rem;
   line-height: 2;
   color: #aaa;
   padding: 1rem 0;
 }
 
-.contact .row .info-container .share a {
+.contact .info-container .share a {
   font-size: 2rem;
   height: 4.5rem;
   width: 4.5rem;
@@ -661,60 +664,7 @@ section {
   background: #1a1a1a;
   color: white;
   text-align: center;
-  margin-right: .3rem;
-}
-
-.contact .row .info-container .share a:hover {
-  background: powderblue;
-}
-
-.contact .row form {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 42rem;
-  flex: 1 1 42rem;
-}
-
-.contact .row form .inputBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.contact .row form .inputBox input {
-  width: 49%;
-}
-
-.contact .row form .inputBox input,
-.contact .row form textarea {
-  border-radius: 5rem;
-  padding: 1.2rem 1.8rem;
-  font-size: 1.6rem;
-  color: white;
-  text-transform: none;
-  margin: .7rem 0;
-  background: #1a1a1a;
-}
-
-.contact .row form textarea {
-  width: 100%;
-  border-radius: 1rem;
-  resize: none;
-  height: 25rem;
-}
-
-.contact .row form .btn {
-  padding: 1rem 3rem;
-  cursor: pointer;
-}
-
-.contact .row form .btn:hover {
-  background: white;
-  color: black;
+  margin-right: 1.3rem;
 }
 
 @media (max-width: 1200px) {
@@ -753,15 +703,11 @@ section {
   .contact .row .info-container .box-container .box .info p {
     font-size: 2rem;
   }
-  .contact .row .info-container .box-container .box .info a {
-    font-size: 2rem;
-  }
-  .contact .row form .inputBox input {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
   .about .row .count-container .box {
     align-items: center;
+  }
+  .contact .contact-model{
+    display: none;
   }
 }
 

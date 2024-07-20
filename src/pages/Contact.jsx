@@ -1,19 +1,20 @@
-import { FaEnvelope, FaMapMarked, FaPhone } from "react-icons/fa";
+import Spline from "@splinetool/react-spline";
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin, FaMapMarked, FaPhone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const Contact = () => {
   return (
-    <section className="contact" style={{overflow: 'hidden !important'}}>
-      <div className="row">
+    <section className="contact" style={{ overflow: 'hidden !important' }}>
         <div className="info-container">
           <h1>get in touch</h1>
           <p>
-          Experienced Full Stack Web Developer proficient in front-end and back-end technologies,
+            Experienced Full Stack Web Developer proficient in front-end and back-end technologies,
             I am available for work. Connect with me
           </p>
           <div className="box-container">
             <div className="box">
-              <FaMapMarked/>
+              <FaMapMarked />
               <div className="info">
                 <h3> address : </h3>
                 <p>mumbai, India OR Ahmedabad, India</p>
@@ -21,41 +22,48 @@ const Contact = () => {
             </div>
 
             <div className="box">
-            <FaEnvelope />
+              <FaEnvelope />
               <div className="info">
                 <h3>email :</h3>
-                <a href="mailto:kasimkkn15@gmail.com">kasimkkn15@gmail.com</a>
+                <p>kasimkkn15@gmail.com</p>
               </div>
             </div>
 
             <div className="box">
-              <FaPhone/>
+              <FaPhone />
               <div className="info">
                 <h3>number :</h3>
-                <a href="tel:918459258801">+91 8459258801</a>
+                <p>+91 8459258801</p>
               </div>
             </div>
           </div>
 
           <div className="share">
-            <a
-              href="https://github.com/Kasimkkn"
-              className="fab fa-github"
+            <Link
+              to="https://github.com/Kasimkkn"
               target="_blank"
-            ></a>
-            <a
-              href="https://www.instagram.com/kasim_kkn/"
-              className="fab fa-instagram"
+            >
+              <FaGithub />
+            </Link>
+            <Link
+              to="https://www.instagram.com/kasim_kkn/"
               target="_blank"
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/kasim-kadiwala-221665240/"
-              className="fab fa-linkedin"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/kasim-kadiwala-221665240/"
               target="_blank"
-            ></a>
+            >
+              <FaLinkedin />
+            </Link>
           </div>
         </div>
-      </div>
+        <div className="contact-model">
+          <Spline
+            scene="https://prod.spline.design/UPTjVBOfURcVKnjv/scene.splinecode"
+          />
+        </div>
     </section>
   );
 };
